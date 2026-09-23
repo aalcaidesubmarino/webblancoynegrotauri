@@ -1,0 +1,26 @@
+{
+  "name": "blanco-y-negro-ecosystem",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "pnpm --filter web run build",
+    "build:web": "pnpm --filter web run build",
+    "build:tpv": "pnpm --filter tpv run build",
+    "build:all": "pnpm --filter web run build && pnpm --filter tpv run build",
+    "dev:web": "pnpm --filter web run dev",
+    "dev:tpv": "pnpm --filter tpv run dev",
+    "check": "pnpm -r run check",
+    "db:push": "pnpm --filter @repo/db run db:push",
+    "db:generate": "pnpm --filter @repo/db run db:generate",
+    "db:studio": "pnpm --filter @repo/db run db:studio"
+  },
+  "dependencies": {
+    "@neon/config": "^1.7.2",
+    "@neon/env": "^1.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  },
+  "packageManager": "pnpm@9.15.9"
+}

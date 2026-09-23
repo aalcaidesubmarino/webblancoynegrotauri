@@ -1,0 +1,11 @@
+@import '@repo/ui/styles';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fbf9f5;
+  color: #26292b;
+  overflow-x: hidden;
+}
